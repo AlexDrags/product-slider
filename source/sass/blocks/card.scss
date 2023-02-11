@@ -1,0 +1,150 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  text-align: center;
+  max-width: 334px;
+  min-height: 496px;
+  border: 1px solid #ecf0f4;
+  border-radius: 5px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+  }
+
+  & .card__byu-element {
+    display: flex;
+    justify-content: center;
+
+    @include vp-767 {
+      flex-wrap: wrap;
+    }
+  }
+
+  & .card__byu-info {
+    display: flex;
+    max-width: 100px;
+    width: 100%;
+  }
+
+  & span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  & h3 + div {
+    text-align: center;
+    width: 100%;
+  }
+
+  & [type="number"] {
+    max-width: 38px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ecf0f4;
+    border-bottom: 1px solid #ecf0f4;
+    border-left: none;
+    border-right: none;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  & img {
+    max-width: 332px;
+
+    @include vp-1719 {
+      max-width: 260px;
+    }
+  }
+}
+
+.card__title {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.card__button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  min-width: 174px;
+  min-height: 50px;
+  background-color: #f1d264;
+  align-self: center;
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
+
+  @include vp-767 {
+    min-width: 220px;
+  }
+}
+
+.card__button-minus {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid #ecf0f4;
+  border-bottom: 1px solid #ecf0f4;
+  border-radius: 5px 0 0 5px;
+  border-left: 1px solid #ecf0f4;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.card__button-incr {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-top: 1px solid #ecf0f4;
+  border-bottom: 1px solid #ecf0f4;
+  border-right: 1px solid #ecf0f4;
+  border-radius: 0 5px 5px 0;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.card__swiper-slide--new {
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/markNew.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 20px;
+  }
+}
+
+.card__swiper-slide--hit {
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/marHit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 20px;
+  }
+}
