@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Всё что можно купить за деньги найдётся тут.">
+  <title>AllShopp</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <section class="products" id="abonnement">
+        <div class="products__container container">
+          <h1 class="visually-hidden">Каталог</h1>
+          <div class="tab">
+            <button class="tablinks active" id="defaultOpen">Популярные товары</button>
+            <button class="tablinks">Недавно купили</button>
+            <button class="tablinks">Вас&nbsp;может&nbsp;заинтересовать</button>
+          </div>
+
+          <div id="popular" class="tabcontent">
+            <div class="products__swiper swiper">
+              <div class="products__swiper-wrapper swiper-wrapper">
+
+                <div class="products__swiper-slide swiper-slide">
+                  <div class="products__card card">
+                    <div class="card__swiper swiper">
+                      <div class="card__swiper-wrapper swiper-wrapper">
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/prod1.png" alt="Кашпо.">
+                        </div>
+                        <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                          <img src="./img/prod2.png" alt="SMARTWATCH.">
+                        </div>
+                        <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                          <img src="./img/prod3.png" alt="Кольцо.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                      </div>
+                      <div class="card__swiper-pagination swiper-pagination"></div>
+                    </div>
+                    <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                    <div>
+                      <span>600 ₽</span>
+                      <del>810 ₽ </del>
+                    </div>
+                    <div class="card__byu-element">
+                      <p class="card__byu-info">
+                        <button class="card__button-minus" type="button">-</button>
+                        <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                        <button class="card__button-incr" type="button">+</button>
+                      </p>
+                      <button class="card__button" type="button">
+                        <svg width="20" height="20">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__swiper-slide swiper-slide">
+                  <div class="products__card card">
+                    <div class="card__swiper swiper">
+                      <div class="card__swiper-wrapper swiper-wrapper">
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/prod1.png" alt="Кашпо.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+
+                        <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                          <img src="./img/prod2.png" alt="SMARTWATCH.">
+                        </div>
+                        <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                          <img src="./img/prod3.png" alt="Кольцо.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                      </div>
+                      <div class="card__swiper-pagination swiper-pagination"></div>
+                    </div>
+                    <h3 class="card__title">Кашпо для цветов керамическое СИМПЛГРЕЙ</h3>
+                    <div><span>450 ₽</span></div>
+                    <div class="card__byu-element">
+                      <p class="card__byu-info">
+                        <button class="card__button-minus" type="button">-</button>
+                        <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                        <button class="card__button-incr" type="button">+</button>
+                      </p>
+                      <button class="card__button" type="button">
+                        <svg width="20" height="20">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                        В корзину
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__swiper-slide swiper-slide">
+                  <div class="products__card card">
+                    <div class="card__swiper swiper">
+                      <div class="card__swiper-wrapper swiper-wrapper">
+                        <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                          <img src="./img/prod2.png" alt="SMARTWATCH.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/prod1.png" alt="Кашпо.">
+                        </div>
+
+                        <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                          <img src="./img/prod3.png" alt="Кольцо.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                      </div>
+                      <div class="card__swiper-pagination swiper-pagination"></div>
+                    </div>
+                    <h3 class="card__title">Умные часы SMARTWATCH XM 109 черный</h3>
+                    <div>
+                      <span>450 ₽</span>
+                    </div>
+                    <div class="card__byu-element">
+                      <p class="card__byu-info">
+
+                        <button class="card__button-minus" type="button">-</button>
+                        <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                        <button class="card__button-incr" type="button">+</button>
+                      </p>
+
+                      <button class="card__button" type="button">
+                        <svg width="20" height="20">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                        В корзину
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products__swiper-slide swiper-slide">
+                  <div class="products__card card">
+                    <div class="card__swiper swiper">
+                      <div class="card__swiper-wrapper swiper-wrapper">
+                        <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                          <img src="./img/prod3.png" alt="Кольцо.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/prod1.png" alt="Кашпо.">
+                        </div>
+                        <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                          <img src="./img/prod2.png" alt="SMARTWATCH.">
+                        </div>
+                        <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                          <img src="./img/prod3.png" alt="Кольцо.">
+                        </div>
+                        <div class="card__swiper-slide swiper-slide">
+                          <img src="./img/empty.png" alt="Тарелка.">
+                        </div>
+                      </div>
+                      <div class="card__swiper-pagination swiper-pagination"></div>
+                    </div>
+                    <h3 class="card__title">Золотое кольцо МАЛИКА с аметистом и фианитами</h3>
+                    <div>
+                      <span>15 700 ₽</span>
+                    </div>
+                    <div class="card__byu-element">
+                      <p class="card__byu-info">
+                        <button class="card__button-minus" type="button">-</button>
+                        <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                        <button class="card__button-incr" type="button">+</button>
+                      </p>
+                      <button class="card__button" type="button">
+                        <svg width="20" height="20">
+                          <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                        В корзину
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="products__swiper-button-next swiper-button-next"></div>
+            <div class="products__swiper-button-prev swiper-button-prev"></div>
+          </div>
+
+          <div id="byuing" class="tabcontent">
+              <div class="products__swiper swiper">
+                <div class="products__swiper-wrapper swiper-wrapper">
+
+                  <div class="products__swiper-slide swiper-slide">
+                    <div class="products__card card">
+                      <div class="card__swiper swiper">
+                        <div class="card__swiper-wrapper swiper-wrapper">
+                          <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                            <img src="./img/prod3.png" alt="Кольцо.">
+                          </div>
+                          <div class="card__swiper-slide swiper-slide">
+                            <img src="./img/empty.png" alt="Тарелка.">
+                          </div>
+                          <div class="card__swiper-slide swiper-slide">
+                            <img src="./img/prod1.png" alt="Кашпо.">
+                          </div>
+                          <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                            <img src="./img/prod2.png" alt="SMARTWATCH.">
+                          </div>
+                          <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                            <img src="./img/prod3.png" alt="Кольцо.">
+                          </div>
+                          <div class="card__swiper-slide swiper-slide">
+                            <img src="./img/empty.png" alt="Тарелка.">
+                          </div>
+                        </div>
+                        <div class="card__swiper-pagination swiper-pagination"></div>
+                      </div>
+                      <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                      <div>
+                        <span>600 ₽</span>
+                        <del>810 ₽ </del>
+                      </div>
+                      <div class="card__byu-element">
+                        <p class="card__byu-info"><button class="card__button-minus" type="button">-</button>
+                          <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                          <button class="card__button-incr" type="button">+</button>
+                        </p>
+                        <button class="card__button" type="button">В корзину</button>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="products__swiper-slide swiper-slide">
+                      <div class="products__card card">
+                        <div class="card__swiper swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                              <img src="./img/prod2.png" alt="SMARTWATCH.">
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/empty.png" alt="Тарелка.">
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/prod1.png" alt="Кашпо.">
+                            </div>
+
+                            <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                              <img src="./img/prod3.png" alt="Кольцо.">
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/empty.png" alt="Тарелка.">
+                            </div>
+                          </div>
+                          <div class="card__swiper-pagination swiper-pagination"></div>
+                        </div>
+                        <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                        <div><span>600 ₽</span>
+                          <del>810 ₽ </del></div>
+                        <div class="card__byu-element">
+                          <p class="card__byu-info"><button class="card__button-minus" type="button">-</button>
+                            <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                            <button class="card__button-incr" type="button">+</button>
+                          </p>
+                          <button class="card__button" type="button">В корзину</button>
+
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="products__swiper-slide swiper-slide">
+                        <div class="products__card card">
+                          <div class="card__swiper swiper">
+                            <div class="card__swiper-wrapper swiper-wrapper">
+                              <div class="card__swiper-slide swiper-slide">
+                                <img src="./img/empty.png" alt="Тарелка.">
+                              </div>
+                              <div class="card__swiper-slide swiper-slide">
+                                <img src="./img/prod1.png" alt="Кашпо.">
+                              </div>
+                              <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                                <img src="./img/prod2.png" alt="SMARTWATCH.">
+                              </div>
+                              <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                <img src="./img/prod3.png" alt="Кольцо.">
+                              </div>
+                              <div class="card__swiper-slide swiper-slide">
+                                <img src="./img/empty.png" alt="Тарелка.">
+                              </div>
+                            </div>
+                            <div class="card__swiper-pagination swiper-pagination"></div>
+                          </div>
+                          <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                          <div><span>600 ₽</span>
+                            <del>810 ₽ </del></div>
+                          <div class="card__byu-element">
+                            <p class="card__byu-info"><button class="card__button-minus" type="button">-</button>
+                              <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                              <button class="card__button-incr" type="button">+</button>
+                            </p>
+                            <button class="card__button" type="button">В корзину</button>
+
+                          </div>
+                        </div>
+                  </div>
+
+                  <div class="products__swiper-slide swiper-slide">
+                          <div class="products__card card">
+                            <div class="card__swiper swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/prod1.png" alt="Кашпо.">
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/empty.png" alt="Тарелка.">
+                                </div>
+
+                                <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                                  <img src="./img/prod2.png" alt="SMARTWATCH.">
+                                </div>
+                                <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                  <img src="./img/prod3.png" alt="Кольцо.">
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/empty.png" alt="Тарелка.">
+                                </div>
+                              </div>
+                              <div class="card__swiper-pagination swiper-pagination"></div>
+                            </div>
+                            <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                            <div><span>600 ₽</span>
+                              <del>810 ₽ </del></div>
+                            <div class="card__byu-element">
+                              <p class="card__byu-info"><button class="card__button-minus" type="button">-</button>
+                                <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                                <button class="card__button-incr" type="button">+</button>
+                              </p>
+                              <button class="card__button" type="button">В корзину</button>
+
+                            </div>
+                          </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="products__swiper-button-next swiper-button-next"></div>
+              <div class="products__swiper-button-prev swiper-button-prev"></div>
+          </div>
+
+          <div id="interesting" class="tabcontent">
+            <div class="products__swiper swiper">
+              <div class="products__swiper-wrapper swiper-wrapper">
+
+                          <div class="products__swiper-slide swiper-slide">
+                            <div class="products__card card">
+                              <div class="card__swiper swiper">
+                                <div class="card__swiper-wrapper swiper-wrapper">
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/prod1.png" alt="Кашпо.">
+                                  </div>
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/empty.png" alt="Тарелка.">
+                                  </div>
+
+                                  <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                                    <img src="./img/prod2.png" alt="SMARTWATCH.">
+                                  </div>
+                                  <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                    <img src="./img/prod3.png" alt="Кольцо.">
+                                  </div>
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/empty.png" alt="Тарелка.">
+                                  </div>
+                                </div>
+                                <div class="card__swiper-pagination swiper-pagination"></div>
+                              </div>
+                              <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                              <div><span>600 ₽</span>
+                                <del>810 ₽ </del></div>
+                              <div class="card__byu-element">
+                                <p class="card__byu-info"><button class="card__button-minus" type="button">-</button>
+                                  <input class="card__quantity" type="number" name="number" value="1" min="1" max="10">
+                                  <button class="card__button-incr" type="button">+</button>
+                                </p>
+                                <button class="card__button" type="button">В корзину</button>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="products__swiper-slide swiper-slide">
+                              <div class="products__card card">
+                                <div class="card__swiper swiper">
+                                  <div class="card__swiper-wrapper swiper-wrapper">
+                                    <div class="card__swiper-slide swiper-slide">
+                                      <img src="./img/empty.png" alt="Тарелка.">
+                                    </div>
+                                    <div class="card__swiper-slide swiper-slide">
+                                      <img src="./img/prod1.png" alt="Кашпо.">
+                                    </div>
+                                    <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                                      <img src="./img/prod2.png" alt="SMARTWATCH.">
+                                    </div>
+                                    <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                      <img src="./img/prod3.png" alt="Кольцо.">
+                                    </div>
+                                    <div class="card__swiper-slide swiper-slide">
+                                      <img src="./img/empty.png" alt="Тарелка.">
+                                    </div>
+                                  </div>
+                                  <div class="card__swiper-pagination swiper-pagination"></div>
+                                </div>
+                                <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                                <div><span>600 ₽</span>
+                                  <del>810 ₽ </del></div>
+                                <div class="card__byu-element">
+                                  <p class="card__byu-info"><button class="card__button-minus" type="button">-</button>
+                                    <input class="card__quantity" type="number" name="number" value="1" min="1"
+                                      max="10">
+                                    <button class="card__button-incr" type="button">+</button>
+                                  </p>
+                                  <button class="card__button" type="button">В корзину</button>
+
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="products__swiper-slide swiper-slide">
+                                <div class="products__card card">
+                                  <div class="card__swiper swiper">
+                                    <div class="card__swiper-wrapper swiper-wrapper">
+                                      <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                        <img src="./img/prod3.png" alt="Кольцо.">
+                                      </div>
+                                      <div class="card__swiper-slide swiper-slide">
+                                        <img src="./img/empty.png" alt="Тарелка.">
+                                      </div>
+                                      <div class="card__swiper-slide swiper-slide">
+                                        <img src="./img/prod1.png" alt="Кашпо.">
+                                      </div>
+                                      <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                                        <img src="./img/prod2.png" alt="SMARTWATCH.">
+                                      </div>
+                                      <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                        <img src="./img/prod3.png" alt="Кольцо.">
+                                      </div>
+                                      <div class="card__swiper-slide swiper-slide">
+                                        <img src="./img/empty.png" alt="Тарелка.">
+                                      </div>
+                                    </div>
+                                    <div class="card__swiper-pagination swiper-pagination"></div>
+                                  </div>
+                                  <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                                  <div><span>600 ₽</span>
+                                    <del>810 ₽ </del></div>
+                                  <div class="card__byu-element">
+                                    <p class="card__byu-info"><button class="card__button-minus"
+                                        type="button">-</button>
+                                      <input class="card__quantity" type="number" name="number" value="1" min="1"
+                                        max="10">
+                                      <button class="card__button-incr" type="button">+</button>
+                                    </p>
+                                    <button class="card__button" type="button">В корзину</button>
+
+                                  </div>
+                                </div>
+                          </div>
+
+                          <div class="products__swiper-slide swiper-slide">
+                                  <div class="products__card card">
+                                    <div class="card__swiper swiper">
+                                      <div class="card__swiper-wrapper swiper-wrapper">
+                                        <div class="card__swiper-slide card__swiper-slide--hit swiper-slide">
+                                          <img src="./img/prod2.png" alt="SMARTWATCH.">
+                                        </div>
+                                        <div class="card__swiper-slide swiper-slide">
+                                          <img src="./img/empty.png" alt="Тарелка.">
+                                        </div>
+                                        <div class="card__swiper-slide swiper-slide">
+                                          <img src="./img/prod1.png" alt="Кашпо.">
+                                        </div>
+
+                                        <div class="card__swiper-slide card__swiper-slide--new swiper-slide">
+                                          <img src="./img/prod3.png" alt="Кольцо.">
+                                        </div>
+                                        <div class="card__swiper-slide swiper-slide">
+                                          <img src="./img/empty.png" alt="Тарелка.">
+                                        </div>
+                                      </div>
+                                      <div class="card__swiper-pagination swiper-pagination"></div>
+                                    </div>
+                                    <h3 class="card__title">Тарелка керамическая ручной работы ⌀ 12</h3>
+                                    <div><span>600 ₽</span>
+                                      <del>810 ₽ </del></div>
+                                    <div class="card__byu-element">
+                                      <p class="card__byu-info"><button class="card__button-minus"
+                                          type="button">-</button>
+                                        <input class="card__quantity" type="number" name="number" value="1" min="1"
+                                          max="10">
+                                        <button class="card__button-incr" type="button">+</button>
+                                      </p>
+                                      <button class="card__button" type="button">В корзину</button>
+
+                                    </div>
+                                  </div>
+                          </div>
+
+              </div>
+              <div class="products__swiper-button-next swiper-button-next"></div>
+              <div class="products__swiper-button-prev swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="js/vendor.min.js"></script>
+  <script defer src="js/main.min.js"></script>
+
+</body>
+
+</html>
